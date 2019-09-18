@@ -1,3 +1,70 @@
-p{
-    font-family: 'Courier New', Courier, monospace
+.divBorder{
+    border-width: 1;
+    border: solid thin;
+    padding: 3%;    
+    border-color: grey;
+    width:40%;
+    display: inline-block;
+    
+}
+input{
+    width: 100%;
+    
+
+}
+
+h1{
+    text-align: left;
+    margin-top: 0;
+    
+}
+body{
+    text-align: center;
+}
+
+.table{
+    text-align: left;    
+}
+
+table { 
+    border-collapse: collapse; 
+}
+tr { 
+    border: solid thin; 
+    border-color: grey;
+}
+h3{
+    font-family: 'Raleway', sans-serif;
+    margin-top: 0;
+    
+}
+
+h4{
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+tr:hover { 
+    border: solid thin; 
+    border-color: grey;
+    background-color: grey;
+}
+img{
+    padding-right:20px;
+}
+td {
+    padding-top:20px;
+    padding-bottom:20px;
+    padding-right:20px;   
+  }
+  
+  td:first-child {
+    padding-left:20px;
+    padding-right:0;
+  }
+
+
+.parentTableDiv{
+    text-align: center;  
+}
+.tableDiv{
+    display: inline-block;
 }
