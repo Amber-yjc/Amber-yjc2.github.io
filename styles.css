@@ -28,19 +28,27 @@ body{
 
 table { 
     border-collapse: collapse; 
+    table-layout: fixed;
+
 }
 tr { 
     border: solid thin; 
     border-color: grey;
+    
 }
 h3{
     font-family: 'Raleway', sans-serif;
     margin-top: 0;
+    width: 75%;
+    text-align: left;
     
 }
 
-h4{
+p{
     font-family: 'Open Sans Condensed', sans-serif;
+    width:75%;
+    text-align: left;
+    
 }
 tr:hover { 
     border: solid thin; 
@@ -49,11 +57,13 @@ tr:hover {
 }
 img{
     padding-right:20px;
+    
 }
 td {
     padding-top:20px;
     padding-bottom:20px;
     padding-right:20px;   
+    overflow-wrap: break-word;
   }
   
   td:first-child {
