@@ -5,17 +5,37 @@
     <title>Artist Directory</title>
     <link href="styles.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Raleway&display=swap" rel="stylesheet">
+    <script src="scriptIndex.js"></script>  
+   
 </head>
 
 <body>
+     
     <div class="divBorder">
         <h1>Artist Directory</h1>
-        <input type="text" placeholder="Search..">
+      
+            <form>
+                <input class="searchInput" type="text" placeholder="Search..">
+                <button id="addButton" type="button"  onClick="togglePopUp()">Add artist</button>
+            </form>
+        
     </div>
-    <div class="parentTableDiv">
+    <br/>
+
+    <div id='popUp'>
+        <form>
+            <input class="searchInput" id="artistName" type="name" placeholder="Artist Name">
+            <input class="searchInput" id="artistAbout" type="about" placeholder="About Artist">
+            <input class="searchInput" id="artistUrl" type="imgURL" placeholder="Image url"><br/>
+            <button id="addPopButton" type="button" onclick="addArtist(document.getElementById('artistName').value,document.getElementById('artistAbout').value,document.getElementById('artistUrl').value)">Add</button>            
+            <p></p>
+        </form>
+
+    </div>
+    <!-- <div class="parentTableDiv"> -->
         <div class="tableDiv">
-            <table>
-                <tr>
+            <table id="mainTable">
+                <!-- <tr>
                     <td>
                         <img src="https://randomuser.me/api/portraits/med/women/1.jpg         " width="82" height="86"
                             title="White flower" alt="Flower">
@@ -27,6 +47,8 @@
                         </div>
                     </td>
                 </tr>
+
+
                 <tr>
                     <td>
                         <img src="https://randomuser.me/api/portraits/med/women/2.jpg         " width="82" height="86"
@@ -74,12 +96,12 @@
                             <p>Royal Academy of Painting</p>
                         </div>
                     </td>
-                </tr>
+                </tr> -->
             </table>
         </div>
-    </div>
+    <!-- </div> -->
 
-
+    
 </body>
 
 </html>
