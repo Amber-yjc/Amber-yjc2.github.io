@@ -14,7 +14,8 @@ function searchArtist(searchInput){
   var h3Tags = document.getElementsByTagName("h3");
  
   for (var i = 0; i < h3Tags.length; i++) {
-    if (!h3Tags[i].textContent.toLowerCase().startsWith(searchInput.toLowerCase())) {
+    originString = h3Tags[i].textContent.toLowerCase();
+    if (!originString.includes(searchInput.toLowerCase())) {
       h3Tags[i].parentNode.parentNode.parentNode.style.display = "none";
     } else{
       h3Tags[i].parentNode.parentNode.parentNode.style.display = "";
